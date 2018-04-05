@@ -1,0 +1,9 @@
+#!/bin/bash
+#changing second last line to +100 instead of plus 1
+echo "Positional parameter \$0 is $0"
+x=1
+for i in "$@"
+do
+	echo "Positional parameter \$$x is $i"
+	x=$(expr $x + 100)
+done

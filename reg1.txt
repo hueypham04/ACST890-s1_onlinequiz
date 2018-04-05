@@ -1,0 +1,6 @@
+#!/bin/bash
+#removing the loop commands but keeping everything else the same
+echo "Positional parameter \$0 is $0"
+x=1
+echo "The first positional parameter \$$x is $1"
+x=$(expr $x + 1)

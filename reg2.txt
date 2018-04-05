@@ -1,0 +1,9 @@
+#!/bin/bash
+#changing line 3 from “@” to $1 $2 $3
+echo "Positional parameter \$0 is $0"
+x=1
+for i in $1 $2 $3
+do
+	echo "Positional parameter \$$x is $i"
+	x=$(expr $x + 1)
+done
